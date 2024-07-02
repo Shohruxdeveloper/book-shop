@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Fruitkha</title>
+
+
+    {% include 'components/_styles.html' %}
+
+</head>
+<body>
+
+	<!--PreLoader-->
+    {% include 'components/_preLoader.html' %}
+    <!--PreLoader Ends-->
+
+	<!-- header -->
+    {% include 'components/_header.html' %}
+	<!-- end header -->
+
+	<!-- search area -->
+    {% include 'components/_search_area.html' %}
+	<!-- end search area -->
+
+{% block main %}
+
+{% endblock main %}
+
+	<!-- logo carousel -->
+    {% include 'components/_logo_carousel.html' %}
+	<!-- end logo carousel -->
+
+	<!-- footer -->
+    {% include 'components/_footer.html' %}
+	<!-- end footer -->
+
+	<!-- copyright -->
+	 {% include 'components/_copyright.html' %}
+	<!-- end copyright -->
+
+	<!-- jquery -->
+    {% include 'components/_script.html' %}
+
+
+</body>
+</html>

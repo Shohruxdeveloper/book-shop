@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6e8efb, #e9e3f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-container {
+    max-width: 700px;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: rotateIn 1s ease-in-out;
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
+}
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-bio {
+    font-size: 18px;
+    color: #777;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #d05156;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+.profile-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#contact-button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: bounceIn 2s ease;
+}
+
+#contact-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); }
+    50% { transform: scale(1.1); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center
